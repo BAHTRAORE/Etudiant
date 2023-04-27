@@ -1,5 +1,7 @@
 package com.etudiant.etudiant.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+
 public interface EtudiantControllerInterface {
-    public String affiche();
+    String affiche();
 }
