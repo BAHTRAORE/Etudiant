@@ -1,9 +1,29 @@
 package com.etudiant.etudiant.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
+import javax.imageio.spi.ImageReaderSpi;
+
+@Entity
 public class Etudiant {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private String nom;
     private String prenom;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String email;
     private String adresse;
     private int telephone;
