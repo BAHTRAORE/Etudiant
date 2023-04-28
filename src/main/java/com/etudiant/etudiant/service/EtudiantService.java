@@ -19,6 +19,11 @@ public class EtudiantService {
     public List<Etudiant> afficheTout(){
         return etudiantRepositoryInterface.findAll();
     }
+
+    public List<Etudiant> afficheParId(long id){
+        return etudiantRepositoryInterface.findById(id);
+    }
+
 }
 
 

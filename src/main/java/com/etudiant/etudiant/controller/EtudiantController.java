@@ -31,4 +31,10 @@ public class EtudiantController implements EtudiantControllerInterface{
     public List <Etudiant> afficher(Etudiant etudiant){
         return etudiantService.afficheTout();
     }
+
+    @GetMapping("/findById")
+    public List <Etudiant> afficheId(Etudiant etudiant){
+        return etudiantService.afficheParId(etudiant.getId());
+    }
+
 }
